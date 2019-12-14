@@ -17,10 +17,12 @@
             app:navGraph="@navigation/nav_graph"/>
 
         <com.google.android.material.navigation.NavigationView
+            android:layout_gravity="start"
             android:id="@+id/navView"
             app:menu="@menu/overflow_menu"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/nav_header"/>
 
     </androidx.drawerlayout.widget.DrawerLayout>
 </layout>
